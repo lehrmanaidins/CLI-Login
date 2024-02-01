@@ -133,11 +133,7 @@ bool login(std::fstream& file) {
 
     bool loginCorrect = loginCredentialsAreCorrect(enteredUsername, enteredPassword, file);
 
-    if (loginCorrect) {
-        return true;
-    } else {
-        return false;
-    }
+    return loginCorrect;
 }
 
 bool signup(std::fstream& file) {
